@@ -75,10 +75,10 @@ def over?(board)
 end
 
 def winner(board)
-  winner = won?(board)
-  if winner[0] == "X"
+  winner_character = won?(board)
+  if winner_character[0] == "X"
     return "X"
-  elsif winner[0] == "O"
+  elsif winner_character[0] == "O"
     return "O"
   end
 end
