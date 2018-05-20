@@ -26,6 +26,8 @@ def won?(board)
     position_3 = board[win_index_3]
 
   position_1 == position_2 && position_2 == position_3 && position_taken?(board, win_index_1)
+ end
+end
 #  if board == [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 #     return false
 #   elsif position_1 == "X" && position_2 == "X" && position_3 == "X"
@@ -35,8 +37,6 @@ def won?(board)
 #   else
 #     false
 #   end
- end
-end
 
 def full?(board)
   board.all? do |space|
@@ -45,6 +45,10 @@ def full?(board)
 end
 
 def draw?(board)
+  if won?(board)
+    return false
+  elsif ful?(board)
+    return true
   if (full?(board) == true) && (won?(board) == false)
     return true
   elsif full?board && won?(board)
