@@ -78,5 +78,5 @@ def winner(board)
   winner_character = won?(board)
   return board[winner_character[0]]
   if draw?(board)
-    return false
+    return nil
 end
