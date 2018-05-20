@@ -76,9 +76,5 @@ end
 
 def winner(board)
   winner_character = won?(board)
-  if winner_character[0] == "X"
-    return "X"
-  elsif winner_character[0] == "O"
-    return "O"
-  end
+  return winner_character[0]
 end
