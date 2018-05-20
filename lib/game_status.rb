@@ -74,7 +74,7 @@ def over?(board)
   end
 end
 
-def winner?(board)
+def winner(board)
   winner = won?(board)
   if winner[0] == "X"
     return "X"
