@@ -76,9 +76,9 @@ end
 
 def winner(board)
   if won?(board)
-  winner_character = won?(board)
-  return board[winner_character[0]]
-else
+    winner_character = won?(board)
+    return board[winner_character[0]]
+  else
     return nil
   end
 end
