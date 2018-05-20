@@ -75,6 +75,7 @@ def over?(board)
 end
 
 def winner(board)
+  if won?(board)
   winner_character = won?(board)
   return board[winner_character[0]]
   if draw?(board)
